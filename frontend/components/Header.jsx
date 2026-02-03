@@ -5,6 +5,7 @@ import Link from "next/link";
 import { SignedIn, SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { Badge } from "./ui/badge";
+import UserDropdown from "./UserDropdown";
 
 export default async function Header() {
   const user = null;
@@ -49,7 +50,8 @@ export default async function Header() {
           
 
           <SignedIn>
-          
+    {/* How to cook     */}
+    <UserDropdown />
           </SignedIn>
 
           <SignedOut>
