@@ -9,6 +9,7 @@ import Image from "next/image";
 import { checkUser } from "@/lib/checkUser";
 import { Badge } from "./ui/badge";
 import UserDropdown from "./UserDropdown";
+import HowtoCookModal from "./HowtoCookModal";
 
 export default async function Header() {
   const user = await checkUser();
@@ -50,7 +51,7 @@ export default async function Header() {
 
         {/* Action Buttons */}
         <div className="flex items-center space-x-4">
-          {/* <HowToCookModal /> */}
+          <HowtoCookModal />
 
           <SignedIn>
             {/* Pricing Modal with Built-in Trigger */}
